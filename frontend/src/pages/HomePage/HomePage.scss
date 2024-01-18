@@ -6,14 +6,15 @@
 
 .HomePage__button__button {
   position: absolute;
-  left: 73%;
-  bottom: 93%;
+  left: 72.4%;
+  bottom: 92.5%;
   font-size: 8px;
   background-color: black;
   color: white;
   border: none;
   padding: 1em;
   border-radius: 5px;
+  font-size: 0.8em;
 }
 
 .card1 {
@@ -27,17 +28,18 @@
   display: flex;
   justify-content: center;
   list-style: none;
-  height: 6%;
-  margin-right: 28px;
+  height: 5%;
+  margin: -0.5em 10em 2em 10em;
+  gap: 1.3em;
 }
 .button {
-  background-color: black;
+  background-color: rgb(97, 97, 97);
   border: none;
-  height: 46px;
-  width: 255px;
+  padding: 1.5em 6.81em;
   color: white;
-  font-size: 10px;
-  margin-right: 16px;
+  font-size: 12px;
+
+  // margin-right: 16px;
   font-family: $fontBold;
 }
 .button:hover {
