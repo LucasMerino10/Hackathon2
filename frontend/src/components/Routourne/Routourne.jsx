@@ -99,6 +99,7 @@ function Routourne({ setPopupEnabled }) {
 
   return (
     <>
+      <h1>Tourne la roue pour découvrir ton produit offert !</h1>
       <div className="wheel_spin">
         <Wheel
           mustStartSpinning={mustSpin}
@@ -116,15 +117,15 @@ function Routourne({ setPopupEnabled }) {
             src: "./src/assets/marker.svg",
           }}
         />
+        <img
+          className="flower_center"
+          src="./src/assets/flower_center.svg"
+          alt=""
+        />
       </div>
-      <button onClick={handleSpinClick} type="button">
-        Eeeeet z'est partiii !!
+      <button className="buttonWheel" onClick={handleSpinClick} type="button">
+        Tourner la roue
       </button>
-      <img
-        className="flower_center"
-        src="./src/assets/flower_center.svg"
-        alt=""
-      />
     </>
   );
 }

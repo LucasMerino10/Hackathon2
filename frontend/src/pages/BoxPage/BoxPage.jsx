@@ -2,6 +2,7 @@ import "./BoxPage.scss";
 import { Link } from "react-router-dom";
 import box from "../../assets/Box.png";
 import FavoriteItems from "../../components/FavoriteItems/FavoriteItems";
+import WheelOfbeauty from "../WheelOfBeauty/WheelOfBeauty";
 
 function MyAccount() {
   return (
@@ -37,9 +38,7 @@ function MyAccount() {
         <img src={box} alt="FIGMA SCREEN MAGGLE" className="figmaPower" />
       </div>
       <div className="ohlepied">
-        <Link to="/wheel" className="buttonWheel">
-          Je tourne la roue
-        </Link>
+        <WheelOfbeauty />
       </div>
       <FavoriteItems />
     </section>

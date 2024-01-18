@@ -2,7 +2,6 @@
 
 .figmaPower {
   width: 70vw;
-  margin-left: 2rem;
   margin-bottom: 3rem;
 }
 
@@ -13,6 +12,9 @@
   color: white;
   font-family: $fontBold;
   cursor: pointer;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%) translateY(-70%);
 }
 
 .ohlepied {

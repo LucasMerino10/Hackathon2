@@ -1,4 +1,5 @@
 import Prize from "../../assets/bronze.jpg";
+import PrizeDescription from "../../assets/larnaque.png";
 import "./popUp.scss";
 
 function PopUp() {
@@ -6,6 +7,11 @@ function PopUp() {
     <>
       <article className="messagePopUp">Vous avez gagné ce produit !</article>
       <img src={Prize} className="elseve" alt="elseve cheveux dégeu" />
+      <img
+        src={PrizeDescription}
+        className="larnaque"
+        alt="encore un screenshot"
+      />
       <div className="canvas">
         <div className="flower" id="flower1">
           <div className="petal petal1 f1p" />

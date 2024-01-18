@@ -50,7 +50,7 @@ function MyAccount() {
             <p className="myAccount__subClassCountent">John Couscous</p>
             <h4 className="myAccount__subClassTitle">Adresse mail</h4>
             <p className="myAccount__subClassCountent">
-              JohnCoucous@parfum.com
+              johncouscous@parfum.com
             </p>
             <h2 className="myAccount__linkAccount">LIER COMPTE</h2>
             <div className="myAccount__FB">
