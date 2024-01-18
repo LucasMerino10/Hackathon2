@@ -16,7 +16,9 @@ function MyAccount() {
           <ul className="myAccount__sideBar__list">
             <h1> Bonjour John Couscous </h1>
             <h2> DETAILS DU COMPTE CLIENT </h2>
-            <li className="myAccount__sideBar__list__element">Mon compte</li>
+            <Link to="/account" className="myAccount__sideBar__list__element">
+              Mon compte
+            </Link>
             <li className="myAccount__sideBar__list__element">
               Historique de commande
             </li>
@@ -26,12 +28,15 @@ function MyAccount() {
             <li className="myAccount__sideBar__list__element">
               Liste de favoris
             </li>
-            <Link to="/wheel" className="myAccount__sideBar__list__element">
+            <Link to="/boxPage" className="myAccount__sideBar__list__element">
               Ma box
             </Link>
-            <li className="myAccount__sideBar__list__element disconnect">
+            <Link
+              to="/"
+              className="myAccount__sideBar__list__element disconnect"
+            >
               Déconnection
-            </li>
+            </Link>
           </ul>
         </aside>
         <main className="myAccount__main">

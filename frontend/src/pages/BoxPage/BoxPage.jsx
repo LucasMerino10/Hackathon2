@@ -16,7 +16,11 @@ function MyAccount() {
       <div className="myAccount__mainContainer">
         <aside className="myAccount__sideBar">
           <ul className="myAccount__sideBar__list">
-            <li className="myAccount__sideBar__list__element">Mon compte</li>
+            <h1> Bonjour John Couscous </h1>
+            <h2> DETAILS DU COMPTE CLIENT </h2>
+            <Link to="/account" className="myAccount__sideBar__list__element">
+              Mon compte
+            </Link>
             <li className="myAccount__sideBar__list__element">
               Historique de commande
             </li>
@@ -26,12 +30,13 @@ function MyAccount() {
             <li className="myAccount__sideBar__list__element">
               Liste de favoris
             </li>
-            <Link to="/wheel" className="myAccount__sideBar__list__element">
-              Ma box
-            </Link>
-            <li className="myAccount__sideBar__list__element disconnect">
+            <li className="myAccount__sideBar__list__element">Ma box</li>
+            <Link
+              to="/"
+              className="myAccount__sideBar__list__element disconnect"
+            >
               Déconnection
-            </li>
+            </Link>
           </ul>
         </aside>
         <img src={box} alt="FIGMA SCREEN MAGGLE" className="figmaPower" />
