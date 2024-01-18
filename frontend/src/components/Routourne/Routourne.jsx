@@ -1,8 +1,9 @@
 import { Wheel } from "react-custom-roulette";
 import React, { useState } from "react";
+import PropTypes from "prop-types";
 import "./Routourne.scss";
 
-function Routourne() {
+function Routourne({ setPopupEnabled }) {
   const data = [
     {
       option: "0",
@@ -88,6 +89,14 @@ function Routourne() {
     }
   };
 
+  const handleStopSpinning = () => {
+    setMustSpin(false);
+    setInterval(() => {
+      setPopupEnabled(true);
+    }, 1000);
+    clearInterval();
+  };
+
   return (
     <>
       <div className="wheel_spin">
@@ -95,9 +104,7 @@ function Routourne() {
           mustStartSpinning={mustSpin}
           prizeNumber={prizeNumber}
           data={data}
-          onStopSpinning={() => {
-            setMustSpin(false);
-          }}
+          onStopSpinning={handleStopSpinning}
           backgroundColors={["#e0313100", "#e0313100"]}
           textColors={["#ffffff"]}
           outerBorderWidth={0}
@@ -121,5 +128,9 @@ function Routourne() {
     </>
   );
 }
+
+Routourne.propTypes = {
+  setPopupEnabled: PropTypes.func.isRequired,
+};
 
 export default Routourne;
