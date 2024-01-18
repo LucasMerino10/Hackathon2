@@ -1,0 +1,23 @@
+@import "../../variables.scss";
+
+.figmaPower {
+  width: 70vw;
+  margin-left: 2rem;
+  margin-bottom: 3rem;
+}
+
+.buttonWheel {
+  all: unset;
+  padding: 1rem;
+  background-color: black;
+  color: white;
+  font-family: $fontBold;
+  cursor: pointer;
+}
+
+.ohlepied {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
