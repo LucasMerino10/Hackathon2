@@ -99,7 +99,7 @@ function Routourne({ setPopupEnabled }) {
 
   return (
     <>
-      <h1>Tourne la roue pour découvrir ton produit offert !</h1>
+      <h1>Tournez la roue pour découvrir votre produit offert !</h1>
       <div className="wheel_spin">
         <Wheel
           mustStartSpinning={mustSpin}
@@ -124,7 +124,7 @@ function Routourne({ setPopupEnabled }) {
         />
       </div>
       <button className="buttonWheel" onClick={handleSpinClick} type="button">
-        Tourner la roue
+        C'est parti !
       </button>
     </>
   );

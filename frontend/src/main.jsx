@@ -46,7 +46,7 @@ const router = createBrowserRouter([
         element: <FavoriteItems />,
       },
       {
-        path: "/boxPage",
+        path: "/boxpage",
         element: <BoxPage />,
       },
     ],
