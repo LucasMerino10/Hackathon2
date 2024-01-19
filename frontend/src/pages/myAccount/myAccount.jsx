@@ -23,9 +23,9 @@ function MyAccount() {
             <li className="myAccount__sideBar__list__element">
               Carnet d'adresses
             </li>
-            <li className="myAccount__sideBar__list__element">
+            <Link to="/favorites" className="myAccount__sideBar__list__element">
               Liste de favoris
-            </li>
+            </Link>
             <Link to="/boxpage" className="myAccount__sideBar__list__element">
               Ma box
             </Link>
