@@ -1,0 +1,15 @@
+.wheel_spin {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-38%, -50%);
+}
+
+.flower_center {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-100%, -210%) rotate(45deg);
+  width: 8rem;
+  z-index: 10;
+}

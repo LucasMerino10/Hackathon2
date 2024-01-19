@@ -14,6 +14,8 @@ function MyAccount() {
       <div className="myAccount__mainContainer">
         <aside className="myAccount__sideBar">
           <ul className="myAccount__sideBar__list">
+            <h1> Bonjour John Couscous </h1>
+            <h2> DETAILS DU COMPTE CLIENT </h2>
             <li className="myAccount__sideBar__list__element">Mon compte</li>
             <li className="myAccount__sideBar__list__element">
               Historique de commande
@@ -21,21 +23,24 @@ function MyAccount() {
             <li className="myAccount__sideBar__list__element">
               Carnet d'adresses
             </li>
-            <li className="myAccount__sideBar__list__element">
+            <Link to="/favorites" className="myAccount__sideBar__list__element">
               Liste de favoris
-            </li>
-            <Link to="/wheel" className="myAccount__sideBar__list__element">
+            </Link>
+            <Link to="/boxpage" className="myAccount__sideBar__list__element">
               Ma box
             </Link>
-            <li className="myAccount__sideBar__list__element disconnect">
+            <Link
+              to="/"
+              className="myAccount__sideBar__list__element disconnect"
+            >
               Déconnection
-            </li>
+            </Link>
           </ul>
         </aside>
         <main className="myAccount__main">
-          <h1 className="myAccount__title">Option de compte & inscription</h1>
+          <h3 className="myAccount__title">Option de compte & inscription</h3>
           <article className="myAccount__main__article">
-            <h2 className="myAccount">MON COMPTE</h2>
+            <h4 className="myAccount">MON COMPTE</h4>
             <div className="button__countainer">
               <button className="myAccount__button" type="submit">
                 MODIFIER LES INFORMATIONS
@@ -48,7 +53,7 @@ function MyAccount() {
             <p className="myAccount__subClassCountent">John Couscous</p>
             <h4 className="myAccount__subClassTitle">Adresse mail</h4>
             <p className="myAccount__subClassCountent">
-              JohnCoucous@parfum.com
+              johncouscous@parfum.com
             </p>
             <h2 className="myAccount__linkAccount">LIER COMPTE</h2>
             <div className="myAccount__FB">

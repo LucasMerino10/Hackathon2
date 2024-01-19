@@ -11,6 +11,7 @@ import MyAccount from "./pages/myAccount/myAccount";
 import FavoriteItems from "./components/FavoriteItems/FavoriteItems";
 import HomePage from "./pages/HomePage/HomePage";
 import CarouselTwo from "./components/CarouselTwo/CarouselTwo";
+import BoxPage from "./pages/BoxPage/BoxPage";
 
 const router = createBrowserRouter([
   {
@@ -43,6 +44,10 @@ const router = createBrowserRouter([
       {
         path: "/favorites",
         element: <FavoriteItems />,
+      },
+      {
+        path: "/boxpage",
+        element: <BoxPage />,
       },
     ],
   },
