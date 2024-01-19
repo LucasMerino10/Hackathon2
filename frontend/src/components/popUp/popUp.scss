@@ -1,3 +1,7 @@
+.popup_container {
+  position: absolute;
+}
+
 .backMainMenuButton {
   position: absolute;
   border: 3px solid white;
@@ -13,7 +17,6 @@
   cursor: pointer;
 }
 .messagePopUp {
-  position: absolute;
   display: flex;
   flex-direction: column;
   background: white;
@@ -38,8 +41,15 @@
 .elseve {
   position: absolute;
   width: 15vw;
-  left: 42%;
+  left: 40%;
   top: 30%;
+}
+
+.larnaque {
+  position: absolute;
+  top: 70%;
+  left: 30%;
+  width: 30vw;
 }
 .backtoMainMenu {
   text-decoration: none;

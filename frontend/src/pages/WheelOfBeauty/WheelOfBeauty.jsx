@@ -11,7 +11,7 @@ function WheelOfbeauty() {
       <div className="wheel_container">
         <Routourne setPopupEnabled={setPopupEnabled} />
       </div>
-      {popupEnabled && <PopUp />}
+      <div className="popup_container">{popupEnabled && <PopUp />}</div>
     </>
   );
 }

@@ -2,6 +2,7 @@ import "./BoxPage.scss";
 import { Link } from "react-router-dom";
 import box from "../../assets/Box.png";
 import FavoriteItems from "../../components/FavoriteItems/FavoriteItems";
+import WheelOfbeauty from "../WheelOfBeauty/WheelOfBeauty";
 
 function MyAccount() {
   return (
@@ -18,6 +19,7 @@ function MyAccount() {
           <ul className="myAccount__sideBar__list">
             <h1> Bonjour John Couscous </h1>
             <h2> DETAILS DU COMPTE CLIENT </h2>
+
             <Link to="/account" className="myAccount__sideBar__list__element">
               Mon compte
             </Link>
@@ -27,10 +29,12 @@ function MyAccount() {
             <li className="myAccount__sideBar__list__element">
               Carnet d'adresses
             </li>
-            <li className="myAccount__sideBar__list__element">
+            <Link to="/favorites" className="myAccount__sideBar__list__element">
               Liste de favoris
-            </li>
-            <li className="myAccount__sideBar__list__element">Ma box</li>
+            </Link>
+            <Link to="/boxpage" className="myAccount__sideBar__list__element">
+              Ma box
+            </Link>
             <Link
               to="/"
               className="myAccount__sideBar__list__element disconnect"
@@ -42,9 +46,7 @@ function MyAccount() {
         <img src={box} alt="FIGMA SCREEN MAGGLE" className="figmaPower" />
       </div>
       <div className="ohlepied">
-        <Link to="/wheel" className="buttonWheel">
-          Je tourne la roue
-        </Link>
+        <WheelOfbeauty />
       </div>
       <FavoriteItems />
     </section>
